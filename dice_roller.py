@@ -9,4 +9,4 @@ def roll_dice(n_dice: int) -> list[int]:
     return [random.randint(1, 6) for _ in range(n_dice)]
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run(transport="http", port=8000)
